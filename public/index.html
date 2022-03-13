@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta
+      http-equiv="Content-Security-Policy"
+      content="frame-src https://www.google.com/*"
+    /> -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- <div class="sidebar">
+        <img
+          class="logo"
+          src="./uploads/logo.svg"
+          width="50%"
+          style="height: fit-content"
+        />
+      </div> -->
+      <div class="main-section">
+        <div class="top-bar">
+          <img class="logo" src="./uploads/logo.svg" />
+          <div class="nav selected" onclick="changeNav(0)">New Order</div>
+          <div class="nav" onclick="changeNav(1)">In process</div>
+          <div class="nav" onclick="changeNav(2)">Finished</div>
+        </div>
+        <div class="content">
+          <audio controls id="ring" class="audio">
+            <source src="./audio/ring.mp3" type="audio/ogg" />
+            <source src="./audio/ring.mp3" type="audio/mpeg" />
+            Your browser does not support the audio element.
+          </audio>
+          <!-- ............  -->
+          <div class="order-containner">
+            <!-- <div class="order">
+              <div class="dishes">
+                <div class="dish-card">
+                  <img
+                    src="http://localhost:1337/uploads/thumbnail_butter_chicken_vol_au_vents_104157_1_606366552d.jpeg"
+                    class="dish-img"
+                    alt=""
+                  />
+                  <div class="dish-title">Butter Chicken</div>
+                  <div class="dish-quantity">2</div>
+                </div>
+              </div>
+              <div class="customer-info">
+                <div class="cus">Customer-Info</div>
+                <div class="cus-name">Subash Acharya</div>
+                <div class="cus-phone">9821404897</div>
+                <div class="cus-location">
+                  <iframe
+                    className="map"
+                    width="300"
+                    height="300"
+                    frameborder="0"
+                    allowfullscreen=""
+                    aria-hidden="false"
+                    tabindex="0"
+                    src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDhstQEILFyWIFkGnTZHtu55rU7SWZkUdI&q=27.729429,85.295770"
+                  ></iframe>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/test.js"></script>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FirstName": {
+      "type": "string",
+      "required": true
+    },
+    "LastName": {
+      "type": "string",
+      "required": true
+    },
+    "PhoneNumber": {
+      "type": "string",
+      "required": true
+    },
+    "Dishes": {
+      "type": "json",
+      "required": true
+    },
+    "Location": {
+      "type": "string"
+    },
+    "Lat": {
+      "type": "string"
+    },
+    "Lng": {
+      "type": "string"
+    },
+    "inProcess": {
+      "type": "boolean",
+      "default": false
+    },
+    "hasFinished": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
