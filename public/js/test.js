@@ -222,7 +222,7 @@ function getOrders() {
     });
 }
 function handleUnAuth() {
-  document.location.pathname = "/login";
+  document.location.pathname = "/admin/auth/login";
 }
 
 function processMe(id) {

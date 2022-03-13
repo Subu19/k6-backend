@@ -8,7 +8,7 @@ module.exports = async (ctx, config, { strapi }) => {
     const text = token.split('"')[1];
     console.log(text);
     //   if()
-    jwt.verify(
+    const test = jwt.verify(
       text,
       "2b5b93233ca154bc4359d3ac83d1a64f",
       function (err, decoded) {
@@ -23,6 +23,11 @@ module.exports = async (ctx, config, { strapi }) => {
         // decoded undefined
       }
     );
+    if (test == true) {
+      return true;
+    } else {
+      return false;
+    }
     // go to next policy or reach the controller's action
   } else {
     console.log("verify failed..");
