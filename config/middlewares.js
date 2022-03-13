@@ -11,7 +11,12 @@ module.exports = [
       },
     },
   },
-  "strapi::cors",
+  {
+    name: "strapi::cors",
+    config: {
+      enabled: false,
+    },
+  },
   "strapi::poweredBy",
   "strapi::logger",
   "strapi::query",
