@@ -1,0 +1,73 @@
+{
+  "kind": "singleType",
+  "collectionName": "essentials",
+  "info": {
+    "singularName": "essential",
+    "pluralName": "essentials",
+    "displayName": "Essential",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "FooterText": {
+      "type": "text"
+    },
+    "HomeGallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "HomeFirstContentImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "HomeSecondContentImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "HomeFirstContentTitle": {
+      "type": "string"
+    },
+    "HomeFirstContentText": {
+      "type": "text"
+    },
+    "HomeSecondContentTitle": {
+      "type": "string"
+    },
+    "HomeSecondContentText": {
+      "type": "text"
+    },
+    "Tagline": {
+      "type": "string"
+    },
+    "HomeText": {
+      "type": "text"
+    },
+    "FacebookLink": {
+      "type": "string"
+    },
+    "PhoneNumber": {
+      "type": "string"
+    }
+  }
+}
