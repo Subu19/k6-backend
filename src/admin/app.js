@@ -4,6 +4,7 @@ import favicon from "./extensions/logo.svg";
 export default {
   config: {
     // Replace the Strapi logo in auth (login) views
+
     auth: {
       logo: AuthLogo,
     },
