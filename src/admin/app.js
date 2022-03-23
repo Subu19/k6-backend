@@ -35,6 +35,12 @@ export default {
     // Disable notifications about new Strapi releases
     notifications: { release: false },
   },
+  translations: {
+    en: {
+      "app.components.LeftMenu.navbrand.title": "Dashboard",
+      "app.components.LeftMenu.navbrand.workplace": "...",
+    },
+  },
 
   bootstrap() {},
 };
