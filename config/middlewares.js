@@ -6,7 +6,11 @@ module.exports = [
       contentSecurityPolicy: {
         directives: {
           "script-src-attr": ["'unsafe-inline'"],
-          "frame-src": ["'unsafe-inline'", "http://www.openstreetmap.org/"],
+          "frame-src": [
+            "'unsafe-inline'",
+            "http://www.openstreetmap.org/",
+            "https://plyr.link/",
+          ],
         },
       },
     },
