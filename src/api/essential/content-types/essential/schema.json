@@ -68,6 +68,15 @@
     },
     "PhoneNumber": {
       "type": "string"
+    },
+    "ContactUsBanner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
