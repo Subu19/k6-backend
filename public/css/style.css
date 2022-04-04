@@ -170,3 +170,14 @@ body {
   z-index: 1000;
   /* height: fit-content; */
 }
+.dashboard {
+  position: absolute;
+  top: 20px;
+  bottom: 0px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-transform: none;
+}
