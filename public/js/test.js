@@ -1,5 +1,4 @@
 var socket = io();
-console.log("test");
 var token;
 // const socket = io.connect("http://localhost:1337", {
 //   query: "2b5b93233ca154bc4359d3ac83d1a64f",
@@ -11,10 +10,7 @@ socket.on("hello", (res) => {
   token = respond.jwtToken;
 });
 
-console.log(localStorage.getItem("jwtToken"));
-
 socket.on("newOrder", (res) => {
-  console.log(res);
   changeNav(0);
   document.getElementById("ring").play();
 });
@@ -45,9 +41,7 @@ fetch("/api/checkAuth", {
 })
   .then((res) => res.json())
   .then((json) => {
-    console.log(json);
     if (json.data.verified == true) {
-      console.log("verified");
       mainFunction();
     }
   })
@@ -62,7 +56,6 @@ function getFinished() {
   })
     .then((res) => res.json())
     .then((json) => {
-      console.log(json);
       json.data.map((data) => {
         if (data.attributes.hasFinished == false) return;
         document.getElementsByClassName("order-containner")[0].innerHTML += `
@@ -113,7 +106,6 @@ function getInProcess() {
   })
     .then((res) => res.json())
     .then((json) => {
-      console.log(json);
       json.data.map((data) => {
         if (
           data.attributes.inProcess == false ||
@@ -171,7 +163,6 @@ function getOrders() {
   })
     .then((res) => res.json())
     .then((json) => {
-      console.log(json);
       json.data.map((data) => {
         if (
           data.attributes.inProcess == true ||

@@ -32,12 +32,13 @@ module.exports = {
     io.on("connection", function (socket) {
       // send message on user connection
       console.log("a user had connected");
+
       socket.emit(
         "hello",
         JSON.stringify({
           message: "Hello food lover",
           jwtToken:
-            "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNjQ1ODcwNDgyLCJleHAiOjE2NDg0NjI0ODJ9.j05pUuortFQBDEoPvUWYMV-Q7Gvs2TYcmfHGWw7pWzw",
+            "07f1e871923ccad85d93129c5ff7501217b811c85d74688b540a609c0c8f65e652f113b967a0ae74fcf35c9ac405b93b6c4199c26eae51211e363d480dc26e43dce47b1b16f79a3a215b6a12caaa02bbc980e0d287f20d1a32124ddf80bfd54d00949d65eb25487b99e1c79e6f59e2cce8825ccb1141583a1df78f9ec889ccab",
         })
       );
       // listen for user diconnect
